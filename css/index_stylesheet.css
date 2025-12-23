@@ -1,0 +1,126 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+body
+{
+   background-color: rgb(235, 235, 235);
+}
+
+/* .overlay
+{
+   background-color: rgba(0, 0, 0, 0.5);
+   background-size: 100% 100%;
+   z-index: 999;
+   
+}
+
+.overlay .overlay-content
+{
+   width: 30%;
+   
+   background-color: aliceblue;
+
+   border-radius: 5px;
+} */
+
+.overlay {
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 999;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.overlay .overlay-content {
+   width: 100%;
+   max-width: 500px;
+   background-color: aliceblue;
+   border-radius: 5px;
+}
+
+
+
+h1
+{
+   font-family: 'Pacifico', cursive;
+}
+
+span
+{
+   font-family: 'Pacifico', cursive;
+}
+
+h2
+{ 
+   font-family: 'Comfortaa', sans-serif;
+}
+
+.underline
+{
+   border-bottom: dotted gray ;
+   
+}
+
+/* header
+{
+   border-bottom: dotted gray ;
+   padding-bottom: 40px;
+} */
+/* .bookmarker-parent
+{
+   height: 50px;
+   
+} */
+
+/* .bookmarker
+{
+   width: 17%;
+   height: 25px;
+   margin: auto;
+   position: relative;
+   background-color:#848797;
+   transition: 1s;
+}
+.bookmarker h1
+{
+   position: absolute;
+   bottom: 0;
+   font-style: italic;
+}
+
+.bookmarker:hover
+{
+   height: 40px;
+} */
+
+
+.section-1 {
+   border-bottom: dotted gray;
+   padding-bottom: 20px;
+}
+
+
+.section-1 .button
+{
+   border-radius: 5px;
+   background-color:#4e505a;
+   font-weight: 700;
+   color: white;
+}
+
+.section-1 i
+{
+   color: rgb(45, 44, 44);
+}
+
+.section-1 .button:hover
+{
+   background-color: #6e707b;
+}
+

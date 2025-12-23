@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/media-query.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/index_stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+      <div class=" overlay position-fixed top-0 start-0 end-0 vh-100 d-none justify-content-center">
+        <div class="overlay-content px-3 py-4 m-auto ">
+          <div class=" d-flex justify-content-between">
+            <div>
+              <i class="fa-solid fa-circle text-danger"></i>
+              <i class="fa-solid fa-circle text-warning"></i>
+              <i class="fa-solid fa-circle text-success"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-xmark pe-1"></i>
+            </div>
+          </div>
+          <p class="h5 pb-2 pt-4 fw-bold "> Site Name or Url is not valid, Please follow the rules below :</p>
+          <p class=" pb-2 ps-3"> <i class="fa-solid fa-arrow-right"></i> Site name must contain at least 3 characters</p>
+          <p class=" ps-3"> <i class="fa-solid fa-arrow-right"></i> Site URL must be a valid one</p>
+        </div>
+      </div>
+
+      <div class=" container  my-5 ">
+
+        <!-- <header>
+          <div class=" bookmarker-parent  d-flex justify-content-center ">
+            <div class=" bookmarker d-inline-block  ">
+              <h1> Bookmarker </h1>
+            </div>
+          </div>
+        </header> -->
+
+        <section class="section-1">
+        <div class="underline w-50 m-auto">
+            <h3 class=" text-center"> <i class="fa-regular fa-bookmark"></i>  <span>Bookmark your favorite sites</span>  <i class="fa-regular fa-bookmark"></i> </h3>
+        </div>
+
+          <label class="mb-3 mt-3" > <i class="fa-solid fa-book-bookmark "></i> Site Name </label>
+          <input id="sName" class="form-control mb-4" placeholder="Site Name">
+  
+          <label class="mb-3" > <i class="fa-solid fa-link"></i>  Site URL </label>
+          <input id="sURL" class="form-control mb-4"  placeholder=" Site URL">
+
+          <h5 id="alert" class="text-center text-danger"></h5>
+  
+          <div id="convert" class="d-flex justify-content-center ">
+            <button id="submit" onclick="addSite()" class=" button btn px-5 "> submit</button>
+          </div>
+
+          
+
+        </section>
+
+        <!-- <input class="form-control w-25  mt-4" placeholder= "Search"> -->
+
+        <table class="table text-center my-4 ">
+          <thead>
+            <th>#</th>
+            <th>Website Name</th>
+            <th>Vist</th>
+            <th>Delete</th>
+            <th>Update</th>
+            
+          </thead>
+          <tbody id="tbody">
+          
+              
+          </tbody>
+          
+        </table>
+
+      </div>
+
+
+
+     <script src="./js/main.js"></script> 
+    </body>
+</html>
