@@ -123,3 +123,30 @@ function cancel() {
         <button onclick="addSite()" class="btn btn-primary px-5">Submit</button>
     `;
 }
+
+
+
+function search() {
+
+    var searchValue = document.getElementById('search').value.toLowerCase();
+    var cartona = '';
+
+    for (var i = 0; i < store.length; i++) {
+
+        if (store[i].sName.toLowerCase().includes(searchValue)) {
+
+            cartona += `
+             <tr>
+               <td>${ i + 1}</th>
+               <td>${store[i].sName}</th>
+               <td><a href="${store[i].sURL}" target="_blank"> <button id="Visit" class="btn btn-outline-secondary"> Visit </button></a></td>
+               <td><button id="delete" onclick="deleteSite(${i})" class="btn btn-outline-secondary">Delete</button></td>
+               <td><button id="Update" onclick="updateSite(${i})" class="btn btn-outline-secondary">Update</button></td>
+             </tr>
+            `;
+        }
+    }
+
+    document.getElementById('tbody').innerHTML = cartona;
+}
+
