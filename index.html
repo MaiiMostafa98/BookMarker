@@ -58,7 +58,7 @@
             <h3 class=" text-center"> <i class="fa-regular fa-bookmark"></i>  <span>Bookmark your favorite sites</span>  <i class="fa-regular fa-bookmark"></i> </h3>
         </div>
           
-          <input id="search" onkeyup="search()" class="form-control  mt-5 w-50 m-auto" placeholder="Search...">
+          <input id="search" onkeyup="search()" class="form-control mt-5 w-100 w-md-50 m-auto" placeholder="Search...">
 
           <label class="mb-3 mt-3" > <i class="fa-solid fa-book-bookmark "></i> Site Name </label>
           <input id="sName" class="form-control mb-4" placeholder="Site Name">
@@ -78,21 +78,25 @@
 
         <!-- <input class="form-control w-25  mt-4" placeholder= "Search"> -->
 
-        <table class="table text-center my-4 ">
+      <div class="table-responsive   my-3 ">
+          <table class=" table text-center   ">
           <thead>
+            <tr>
             <th>#</th>
             <th>Website Name</th>
-            <th>Vist</th>
+            <th>Visit</th>
             <th>Delete</th>
             <th>Update</th>
-            
+            </tr>
           </thead>
+
           <tbody id="tbody">
           
               
           </tbody>
           
         </table>
+      </div>
 
       </div>
 

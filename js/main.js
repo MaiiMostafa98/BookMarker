@@ -56,9 +56,9 @@ function displaySites()
            <tr>
            <td>${ i + 1}</th>
             <td>${store[i].sName}</th>
-            <td><a href="${store[i].sURL}" target="_blank"> <button id="Visit" class="btn btn-outline-secondary"> Visit </button></a></td>
-            <td><button id="delete" onclick="deleteSite(${i})" class="btn btn-outline-secondary">Delete</button></td>
-            <td><button id="Update" onclick="updateSite(${i})" class="btn btn-outline-secondary">Update</button></td>
+            <td><a href="${store[i].sURL}" target="_blank"> <button id="Visit" class="btn btn-outline-secondary"> <i class="fa-solid fa-eye"></i> </button></a></td>
+            <td><button id="delete" onclick="deleteSite(${i})" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+            <td><button id="Update" onclick="updateSite(${i})" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button></td>
            </tr>
         `
     };
@@ -139,9 +139,9 @@ function search() {
              <tr>
                <td>${ i + 1}</th>
                <td>${store[i].sName}</th>
-               <td><a href="${store[i].sURL}" target="_blank"> <button id="Visit" class="btn btn-outline-secondary"> Visit </button></a></td>
-               <td><button id="delete" onclick="deleteSite(${i})" class="btn btn-outline-secondary">Delete</button></td>
-               <td><button id="Update" onclick="updateSite(${i})" class="btn btn-outline-secondary">Update</button></td>
+               <td><a href="${store[i].sURL}" target="_blank"> <button id="Visit" class="btn btn-outline-secondary"> <i class="fa-solid fa-eye"></i> </button></a></td>
+               <td><button id="delete" onclick="deleteSite(${i})" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></td>
+               <td><button id="Update" onclick="updateSite(${i})" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button></td>
              </tr>
             `;
         }
